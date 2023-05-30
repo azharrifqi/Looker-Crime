@@ -166,4 +166,8 @@ view: crime {
     type: count
     drill_fields: []
   }
+  measure: Total_unique_key {
+    type: count_distinct
+    sql: ${TABLE}.unique_key ;;
+  }
 }
