@@ -102,6 +102,12 @@ view: crime {
     sql: ${TABLE}.location ;;
   }
 
+  dimension: latlong {
+    type: location
+    sql_latitude: ${latitude} ;;
+    sql_longitude: ${longitude};;
+  }
+
   dimension: location_description {
     type: string
     sql: ${TABLE}.location_description ;;
