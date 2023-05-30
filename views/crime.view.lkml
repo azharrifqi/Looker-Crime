@@ -158,7 +158,7 @@ view: crime {
   }
 
   dimension: year {
-    type: number
+    type: date
     sql: ${TABLE}.year ;;
   }
 
