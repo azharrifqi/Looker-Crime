@@ -33,7 +33,7 @@ view: crime {
   measure: total_beat_drill {
     type: sum
     sql: ${beat} ;;
-    drill_fields: [primary_type,description,location_description]
+    drill_fields: [primary_type,count]
   }
 
   measure: average_beat {
