@@ -70,7 +70,7 @@ view: crime {
   dimension: description {
     type: string
     sql: ${TABLE}.description ;;
-    drill_fields: [primary_type,total_beat,arrest]
+    drill_fields: [district,total_beat,arrest]
   }
 
   dimension: district {
