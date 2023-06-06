@@ -30,6 +30,12 @@ view: crime {
     sql: ${beat} ;;
   }
 
+  measure: total_beat_drill {
+    type: sum
+    sql: ${beat} ;;
+    drill_fields: [primary_type,description,location_description]
+  }
+
   measure: average_beat {
     type: average
     sql: ${beat} ;;
