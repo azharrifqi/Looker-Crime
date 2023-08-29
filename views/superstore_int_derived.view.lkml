@@ -32,10 +32,10 @@ view: superstore_int_derived {
     sql: ${TABLE}.arrest ;;
   }
 
-  dimension: region {
+  dimension: location_description {
     description: "The total number of orders for each user"
     type: string
-    sql: ${TABLE}.region ;;
+    sql: ${TABLE}.location_description ;;
   }
 
   dimension: date {
