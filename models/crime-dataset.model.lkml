@@ -26,3 +26,5 @@ persist_with: crime-dataset_default_datagroup
 # Each joined view also needs to define a primary key.
 
 explore: crime {}
+explore: superstore_int_derived {}
+explore: superstore_sales {}
