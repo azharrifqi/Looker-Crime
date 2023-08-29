@@ -4,7 +4,7 @@ view: superstore_int_derived {
       column: date {
         field: crime.date_month
       }
-      column: category {
+      column: arrest {
         field: crime.arrest
       }
       column: location_description {
@@ -15,7 +15,7 @@ view: superstore_int_derived {
       }
     }
     partition_keys: ["date"]
-    cluster_keys: ["arrest","location_description"]
+    cluster_keys: ["arrest"]
     sql_trigger_value: SELECT CURDATE() ;;
   }
   # derived_table: {
@@ -26,10 +26,10 @@ view: superstore_int_derived {
 
 
 
-  dimension: category {
+  dimension: arrest {
     description: "Unique ID for each user that has ordered"
     type: string
-    sql: ${TABLE}.category ;;
+    sql: ${TABLE}.arrest ;;
   }
 
   dimension: region {
