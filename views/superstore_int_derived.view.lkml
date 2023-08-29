@@ -14,9 +14,9 @@ view: superstore_int_derived {
         field: crime.Total_unique_key
       }
     }
-    # partition_keys: ["date"]
-    # cluster_keys: ["arrest"]
-    # sql_trigger_value: SELECT CURDATE() ;;
+    partition_keys: ["date"]
+    cluster_keys: ["arrest"]
+    sql_trigger_value: SELECT 1 ;;
   }
   # derived_table: {
   #   sql: SELECT * FROM superstore_datasets ;;
