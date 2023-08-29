@@ -15,7 +15,7 @@ view: superstore_int_derived {
       }
     }
     partition_keys: ["date"]
-    cluster_keys: ["category","region"]
+    # cluster_keys: ["category","region"]
     sql_trigger_value: SELECT CURDATE() ;;
   }
   # derived_table: {
